@@ -1,0 +1,9 @@
+# Filtering
+let filterExample1 = filter(from: "application1", by: "loglevel", equals: "error");
+let filterExample2 = filter(from: "application2", by: "date", equals: "yesterday");
+
+# Aggregating
+let results = [filterExample1, filterExample2];
+
+# Outputting
+output(as: "json", results);
